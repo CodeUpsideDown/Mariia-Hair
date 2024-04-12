@@ -6,16 +6,16 @@
 }
 
 body {
-    background-color: #f2e9d0;
+    background-color: #e6dbc1;
 }
 
 .mainMsg {
 
-    background-color: #bb5a5a;
+    background-color: #e6dbc1;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    max-height: 650hv;
+     
     padding-bottom: 10px;
 }
 
@@ -27,46 +27,56 @@ body {
 
 .main-container {
     margin-top: 50px;
-    max-width: 70vh;
-    max-height: 70vh;
+    margin-right: 40px;
+    width: 65vw;
+
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 50%;
     overflow: hidden;
+    z-index: 0;
 }
 
 .profile-photo {
-    width: 110%;
+    width: 135%;
     height: 100%;
     object-fit: cover;
 }
 
 h1 {
-    color: #eaceb4;
+    color: #512010;
     font-family: 'Playfair Display';
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: 700;
     padding-top: 80px;
     padding-left: 40px;
+    z-index: 2;
 }
 
 span {
     display: block;
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 4px;
 }
 
 .contact {
+    width: 14em;
+    height: 4em;
+    font-family: 'Playfair Display';
     display: inline-block;
+    color: #e6dbc1;
+    background-color: #512010;
     cursor: pointer;
-    margin-left: 180px;
+    margin-left: 3em;
     margin-bottom: 10px;
     margin-top: 24px;
-    padding: 20px;
+    padding: 10px;
     outline: 0;
     border: 0;
-    border-radius: 40px;
-    font-size: 30px;
+    border-radius: 80px;
+    font-size: 2.5rem;
     font-weight: 600;
-    box-shadow: #b21e4b -2px -2px 0px 2px, #b21e4b 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    box-shadow: #8e3b24 -2px -2px 0px 2px, #8e3b24 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
     transition: all 0.2s;
 }
 
@@ -97,7 +107,7 @@ span {
 }
 
 .intro {
-    color: #eaceb4;
+    color: hsla( 14.55,67.35%,19.22% ,1);
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -113,11 +123,11 @@ span {
 }
 
 .intro p[data-line="2"] {
-    transform: translateX(7%);
+   padding-left: 220px;
 }
 
 .intro p[data-line="3"] {
-    transform: translateX(14%);
+    padding-left: 240px;
 }
 
 
@@ -176,7 +186,7 @@ span {
 .overlay h2,
 p1 {
     font-family: 'Playfair Display';
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .overlay h3 {
@@ -248,11 +258,11 @@ p1 {
 }
 
 .custom-shape-divider-bottom-1711856646 .shape-fill {
-    fill: #BB5A5A;
+    fill: #512010;;
 }
 
 .footer {
-    background-color: #BB5A5A;
+    background-color: #512010;;
     display: flex;
     justify-content: center;
     padding: 40px;
@@ -304,6 +314,74 @@ p1 {
 
 
 
+@media screen and (max-width: 1112px) {
+    .main-container {
+        width: 40em;
+        height: 25em;
+        margin: 0;
+        margin-top: 24px;
+        margin-right: 20px;
+    }
+
+
+    span{
+        margin-left: 0;
+        font-size: 0.8em;
+    }
+
+    .intro p {
+        padding-left: 40px;
+    }
+    .intro p[data-line="2"] {
+        padding-left: 40px;
+    }
+
+    .intro p[data-line="3"] {
+        padding-left: 40px;
+    }
+     
+    .services{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact {
+        justify-self: center;
+        height: 100px;
+        width: 80%;
+        border-radius: 50px;
+        font-size: 3.4em;
+        text-align: center;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 40px;
+    }
+    .links {
+        width: 100%;
+        margin: 0;
+        font-size: 2rem;
+        gap: 12px;
+        
+    }
+
+    .links a {
+        margin: 0;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -313,50 +391,75 @@ p1 {
         padding: 10px;
     }
 
-    .main-container {
-
-        max-width: 150px;
-
-        max-height: 150px;
-        overflow: hidden;
+    .entry {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .profile-photo {
-        max-width: 100vh;
-        max-height: 100vh;
+    .main-container {
+        
+        
+        width: 250px;
+        height: 250px;
+        margin: 0;
+        margin-top: 24px;
+        
+    }
+
+
+    .text-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
     }
 
     h1 {
-        font-size: 1.5em;
-        padding-top: 30px;
-        padding-left: 20px;
+        font-size: 3.2em;
+        padding-top: 0;
+        padding-left: 0;
     }
 
     span {
         padding: 0;
         margin: 0;
-        margin-top: 10px;
-        margin-left: 25px;
+        font-size: 2.5rem;
+        text-align: center;
+        
     }
 
     .contact {
-        max-height: 60px;
-        max-width: 130px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-        margin-top: 10px;
-        font-size: 1.2em;
+        height: 3em;
+        width: 40vh;
+        border-radius: 100px;
+        font-size: 2em;
         text-align: center;
-        overflow: hidden;
-        padding: 6px;
+        
+        margin: 0;
+        padding: 0 20px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .intro {
+        align-items: center;
     }
 
     .intro p {
-
         display: flex;
-        font-size: 0.8em;
-        padding-left: 20px;
+        font-size: 1.2em;
+        padding: 0;
+        transform: none;
+    }
 
+    .intro p[data-line="2"] {
+       padding-left: 0px;
+    }
+
+    .intro p[data-line="3"] {
+       padding-left: 0px;
     }
 
     .services {
@@ -414,17 +517,27 @@ p1 {
         height: 95%;
     }
 
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding-bottom: 64px;
+    }
+
     .map {
-        max-width: 150px;
-        max-height: 150px;
-        margin-right: 20px;
+        margin: 0;
     }
 
     .links {
-        max-width: 300px;
-        max-height: 150px;
-        margin-left: 10px;
-        font-size: 1em;
+        width: 100%;
+        margin: 0;
+        font-size: 1.4rem;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .links a {
+        margin: 0;
     }
 
     .logo {
@@ -433,3 +546,8 @@ p1 {
         margin-right: 5px;
     }
 }
+
+
+
+
+
