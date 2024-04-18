@@ -15,7 +15,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-     
     padding-bottom: 10px;
 }
 
@@ -29,7 +28,6 @@ body {
     margin-top: 50px;
     margin-right: 40px;
     width: 65vw;
-
     max-width: 500px;
     max-height: 500px;
     border-radius: 50%;
